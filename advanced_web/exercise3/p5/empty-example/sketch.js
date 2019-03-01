@@ -9,7 +9,6 @@ else {
 img = loadImage('img2.jpg');
  }
 }
-
 function setup() {
     var canvas = createCanvas(240, 320);
     canvas.parent('sketch-holder');
@@ -18,7 +17,6 @@ function setup() {
 function draw() {
     image(img, 0, 0, width, height);
 }
-
 function mousePressed() {
     if (pic == true) {
         img = loadImage('img1.jpg');

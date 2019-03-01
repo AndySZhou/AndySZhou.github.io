@@ -1,15 +1,25 @@
 function setup() {
   // put setup code here
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(240, 320);
+  let click = true;
   //canvas.parent('sketch-holder');
 }
 
 function draw() {
-  // put drawing code here
-  background(0, 0, 255);
-  fill(255, 0, 0);
-  //ellipse(50, 50, 80, 80);
-  if(mouseIsPressed){
-    ellipse(mouseX, mouseY, 50, 50);
+  if(click = true){
+    if(mouseIsPressed){
+      loadImage('images/img1.jpg', img => {
+        image(img, 0, 0);
+        });
+      click = false;
+    }
+  }
+  else if(click = false){
+    if(mouseIsPressed){
+      loadImage('images/img2.jpg', img => {
+        image(img, 0, 0);
+        });
+      click = true;
+    }
   }
 }

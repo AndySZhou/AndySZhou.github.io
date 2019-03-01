@@ -1,32 +1,32 @@
-var img;
-var pic = true;
+let image;
+let click = true;
 
 function preload() {
-    if (pic == true) {
-      img = loadImage('/images/img1.jpg');
+    if (click = true) {
+      image = loadImage('/images/img1.jpg');
     }
-    else {
-      img = loadImage('/images/img2.jpg');
+    else if (click = false){
+      image = loadImage('/images/img2.jpg');
     }
 }
 
 function setup() {
     var canvas = createCanvas(240, 320);
-    canvas.parent('sketch-holder');
-    background(255, 0, 200);
+    canvas.parent('pictures');
+    background(255);
 }
 
 function draw() {
-    image(img, 0, 0, width, height);
+    image(image, 0, 0, width, height);
 }
 
 function mousePressed() {
-    if (pic == true) {
-        img = loadImage('/images/img1.jpg');
-        pic = false;
+    if (click = true) {
+        image = loadImage('/images/img1.jpg');
+        click = false;
     }
-    else {
-        img = loadImage('/images/img2.jpg');
-        pic = true;
+    else if (click = false) {
+        image = loadImage('/images/img2.jpg');
+        click = true;
     }
 }

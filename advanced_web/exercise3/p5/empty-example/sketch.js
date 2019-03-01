@@ -1,26 +1,31 @@
-function setup() {
-  // put setup code here
-  createCanvas(240, 320);
-  let click = true;
-  //canvas.parent('sketch-holder');
-  //fuck
+var img;
+var pic = true;
+
+function preload() {
+    if (pic == true) {
+    img = loadImage('img1.jpg');
+    }
+else {
+img = loadImage('img2.jpg');
+ }
 }
 
+function setup() {
+    var canvas = createCanvas(240, 320);
+    canvas.parent('sketch-holder');
+    background(255, 0, 200);
+}
 function draw() {
-  if(click = true){
-    if(mouseIsPressed){
-      loadImage('images/img1.jpg', img => {
-        image(img, 0, 0);
-        });
-      click = false;
+    image(img, 0, 0, width, height);
+}
+
+function mousePressed() {
+    if (pic == true) {
+        img = loadImage('img1.jpg');
+        pic = false;
     }
-  }
-  else if(click = false){
-    if(mouseIsPressed){
-      loadImage('images/img2.jpg', img => {
-        image(img, 0, 0);
-        });
-      click = true;
+    else {
+        img = loadImage('img2.jpg');
+        pic = true;
     }
-  }
 }

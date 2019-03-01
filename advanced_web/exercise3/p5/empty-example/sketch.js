@@ -3,6 +3,7 @@ function setup() {
   createCanvas(240, 320);
   let click = true;
   //canvas.parent('sketch-holder');
+  //fuck
 }
 
 function draw() {

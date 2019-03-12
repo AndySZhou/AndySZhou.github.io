@@ -2,12 +2,8 @@ let image;
 let click = true;
 
 function preload() {
-    if (click = true) {
       image = loadImage('/images/img1.jpg');
-    }
-    else if (click = false){
       image = loadImage('/images/img2.jpg');
-    }
 }
 
 function setup() {

@@ -11,7 +11,7 @@ function setup() {
     //canvas.parent('pictures');
     createCanvas(240, 320);
     background(125);
-    pic = loadImage('images/img3.jpg');
+    pic = loadImage('images/img1.JPG');
 
 
 

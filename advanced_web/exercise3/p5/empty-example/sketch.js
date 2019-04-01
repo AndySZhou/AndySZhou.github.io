@@ -1,5 +1,5 @@
 let pic;
-//let click = true;
+let click = true;
 
 //function preload() {
 //      image = loadImage('images/img1.JPG');
@@ -19,8 +19,6 @@ function setup() {
 
 function draw() {
     image(pic, 0, 0, 240, 320);
-    fill(255, 0, 0);
-    rect(100, 100, 50, 50);
 }
 
 //function mousePressed() {

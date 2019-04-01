@@ -1,4 +1,4 @@
- let pic;
+let pic;
 let click = true;
 
 //function preload() {

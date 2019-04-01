@@ -1,10 +1,10 @@
 let image;
 let click = true;
 
-//function preload() {
-//      image = loadImage('/images/img1.jpg');
+function preload() {
+      image = loadImage('/images/img1.jpg');
 //      image = loadImage('/images/img2.jpg');
-//}
+}
 
 function setup() {
     var canvas = createCanvas(240, 320);

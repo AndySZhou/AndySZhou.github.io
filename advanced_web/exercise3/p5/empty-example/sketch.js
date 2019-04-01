@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-    image(pic, 0, 0);
+    image(pic, 0, 0, 240, 320);
     fill(255, 0, 0);
     rect(100, 100, 50, 50);
 }

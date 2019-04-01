@@ -20,11 +20,11 @@ function draw() {
 
 function mousePressed() {
     if (click = true) {
-        pic = loadImage('/images/img1.jpg');
+        pic = loadImage('/images/img1.JPG');
         click = false;
     }
     else if (click = false) {
-        pic = loadImage('/images/img2.jpg');
+        pic = loadImage('/images/img2.JPG');
         click = true;
     }
 }

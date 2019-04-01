@@ -14,6 +14,10 @@ function setup() {
     pic = loadImage('images/img1.JPG');
 }
 
+function draw() {
+    image(pic, 0, 0, 240, 320);
+}
+
 function mousePressed() {
     if (click = true) {
         pic = loadImage('/images/img1.JPG');
@@ -25,8 +29,4 @@ function mousePressed() {
         click = true;
         redraw();
     }
-}
-
-function draw() {
-    image(pic, 0, 0, 240, 320);
 }

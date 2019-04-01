@@ -18,13 +18,13 @@ function draw() {
     image(pic, 0, 0, 240, 320);
 }
 
-//function mousePressed() {
-//    if (click = true) {
-//        image = loadImage('/images/img1.jpg');
-//        click = false;
-//    }
-//    else if (click = false) {
-//        image = loadImage('/images/img2.jpg');
-//        click = true;
-//    }
-//}
+function mousePressed() {
+    if (click = true) {
+        pic = loadImage('/images/img1.jpg');
+        click = false;
+    }
+    else if (click = false) {
+        pic = loadImage('/images/img2.jpg');
+        click = true;
+    }
+}

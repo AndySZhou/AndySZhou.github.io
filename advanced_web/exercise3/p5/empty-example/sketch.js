@@ -1,19 +1,26 @@
-let image;
-let click = true;
+let pic;
+//let click = true;
 
-function preload() {
-      image = loadImage('/images/img1.jpg');
+//function preload() {
+//      image = loadImage('images/img1.JPG');
 //      image = loadImage('/images/img2.jpg');
-}
+//}
 
 function setup() {
-    var canvas = createCanvas(240, 320);
-    canvas.parent('pictures');
+    //var canvas = createCanvas(240, 320);
+    //canvas.parent('pictures');
+    createCanvas(240, 320);
     background(125);
+    pic = loadImage('images/img3.jpg');
+
+
+
 }
 
 function draw() {
-  //  image(image, 0, 0, width, height);
+    image(pic, 0, 0);
+    fill(255, 0, 0);
+    rect(100, 100, 50, 50);
 }
 
 //function mousePressed() {

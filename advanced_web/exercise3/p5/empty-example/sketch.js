@@ -12,9 +12,6 @@ function setup() {
     createCanvas(240, 320);
     background(125);
     pic = loadImage('images/img1.JPG');
-
-
-
 }
 
 function draw() {

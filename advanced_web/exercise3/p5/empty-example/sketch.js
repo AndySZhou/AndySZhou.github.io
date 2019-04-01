@@ -1,4 +1,4 @@
-/* let pic;
+ let pic;
 let click = true;
 
 //function preload() {
@@ -18,26 +18,15 @@ function mousePressed() {
     if (click = true) {
         pic = loadImage('/images/img1.JPG');
         click = false;
+        redraw()
     }
     else if (click = false) {
         pic = loadImage('/images/img2.JPG');
         click = true;
+        redraw()
     }
 }
 
 function draw() {
     image(pic, 0, 0, 240, 320);
-}
-*/
-let value = 0;
-function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
-}
-function mousePressed() {
-  if (value === 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
 }

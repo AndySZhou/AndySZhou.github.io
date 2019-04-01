@@ -18,12 +18,12 @@ function mousePressed() {
     if (click = true) {
         pic = loadImage('/images/img1.JPG');
         click = false;
-        redraw()
+        redraw();
     }
     else if (click = false) {
         pic = loadImage('/images/img2.JPG');
         click = true;
-        redraw()
+        redraw();
     }
 }
 

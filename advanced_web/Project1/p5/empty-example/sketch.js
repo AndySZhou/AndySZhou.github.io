@@ -13,7 +13,7 @@ function setup() {
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
   background(255, 0, 200);
-  pic = loadImage('images/StamMap.JPG');
+  pic = loadImage('images/StamMap.jpg');
 }
 function draw() {
     image(pic, 0, 0, 1297, 719);

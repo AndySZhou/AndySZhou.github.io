@@ -11,7 +11,7 @@ function setup() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
-  background(255, 0, 200);
+  background(255);
 }
 function draw() {
     image(pic, 0, 0, 1297, 719);

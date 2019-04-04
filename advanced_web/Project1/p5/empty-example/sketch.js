@@ -1,9 +1,11 @@
 let pic;
+let img;
 let loc1 = "Scofieldtown Road, the location of the second UConn Stamford Campus.";
 let loc2 = "The current building where UConn Stamford is located.";
 let loc3 = "Stamford High School, where UConn Stamford was first based.";
 function preload() {
   pic = loadImage('images/StamMap.JPG');
+  img = loadimage('images/img1.JPG');
 }
 
 function setup() {
@@ -11,11 +13,12 @@ function setup() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
-  background(255);
+  background(0);
   //pic = loadImage('images/StamMap.JPG');
 }
 function draw() {
     image(pic, 0, 0, 1297, 719);
+    image(img, 0, 0);
     //ellipse(638, 55, 20, 20);
     //ellipse(740, 655, 20, 20);
     //ellipse(793, 650, 20, 20);

@@ -3,7 +3,7 @@ let loc1 = "Scofieldtown Road, the location of the second UConn Stamford Campus.
 let loc2 = "The current building where UConn Stamford is located.";
 let loc3 = "Stamford High School, where UConn Stamford was first based.";
 function preload() {
-  pic = loadImage('images/StamMap.JPG');
+  pic = loadImage('advanced_web/Project1/p5/empty-example/images/StamMap.JPG');
 }
 
 function setup() {

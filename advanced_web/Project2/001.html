@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>SCP-001</h2>
+  <p>
+    SCP-001 is one of the most important slots on the site, because to many it represents the “origin” of the Foundation. It is so important, in fact,
+    that there is no definite SCP-001 on the site. Instead, there is a list of SCP-001 Proposals, made by many different authors. In-universe, the explanation
+    for this is that the different SCP-001 articles serve as a smokescreen for each other; there is only one “real” SCP-001, with all of the others serving just
+    as cover-ups and fakes: any one of the proposals could be the "real" 001, or none of them could be. In reality, the slot was deemed too important to be set to
+    only one article, and so authors are free to make their own SCP-001 proposals.
+    <br>
+    <br>
+    Most 001 Proposals will have something to do with the in-universe origin of the Foundation, with some of them explicitly telling stories of how it came to be,
+    but others may instead have something to do with the “end” of it. Format screws and long articles are common among proposals, with some resembling tales more than actual articles.
+    <br>
+    <br>
+    A list of all SCP-001 Proposals can be found <a href="http://www.scp-wiki.net/scp-001">here</a>. Careful for the memetic kill agent.
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

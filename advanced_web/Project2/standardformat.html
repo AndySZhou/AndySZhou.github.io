@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Standard Format</h2>
+  <p>
+    SCP’s will usually consist of, at the very least, three sections: Object Class, Special Containment Procedures, and Description.
+    Most SCP’s will also include an Addendum or Exploration Logs of some sort for added context or storytelling, but the first
+    three are the bare minimum.
+    <br>
+    <br>
+    <b>Object Class</b>: Object class is an indicator of how hard it is to contain the SCP object. They will be explained in more detail
+    <a href="objectclasses.html">here</a>.
+    <br>
+    <br>
+    <b>Special Containment Procedures</b>: This is how, in universe, the Foundation actually contains the object and hides it from the
+    public eye. Containment procedures will generally give you hints at what the object is, but will rarely tell you outright,
+    and are usually based in at least some form of science or logic.
+    <br>
+    <br>
+    <b>Description</b>: This section is main portion of many articles, and is the summation of what the object actually is. However, it’s
+    important to note that the description is often only a basic overview, with addendums or logs adding more context, or in some
+    cases, even shedding new light on the nature of the object that wasn’t present in the description.
+    <br>
+    <br>
+    <b>Logs</b>: Many articles include logs of  exploration or interviews which serve to add a human element to articles and proved
+    extra context. Some SCPs, such as SCP-1730, are mostly made up of logs.
+    <br>
+    <br>
+    Many articles will also intentionally deviate or otherwise mess with the format in some way to play up certain aspects of the
+    article. This will be discussed in more detail in the <a href="formatscew.html">Format Screws section.
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

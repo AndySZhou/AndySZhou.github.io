@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Groups of Interest</h2>
+  <p>
+    Groups of Interest, or GoIs, are groups that deal with anomalous objects other than the Foundation that exist in the same universe. Each group has its own philosophy
+    regarding anomalous object, most of which conflict with or are in direct opposition of the Foundation’s goals. A list of all GoIs can be found here, but some of the
+    most notable GoIs include:
+    <br>
+    <br>
+  </p>
+    <button class="collapsible" style="text-align: center;">Global Occult Coalition</button>
+      <div class="content">
+        <h4>
+          <a href="http://www.scp-wiki.net/goc-hub-page">GOC Hub</a>
+          <br>
+          <br>
+          <img src="/advanced_web/Project2/images/GOC.jpg">
+          <br>
+          <br>
+        </h4>
+        <p>
+          As opposed to the Foundation’s policy of containing anomalies, the Global Occult Coalition, or GOC, is much more interested in destroying
+          them. Much more militaristic than the Foundation. The GOC and the Foundation have a tentative policy of non-interference with each other, and in some cases even collaborate.
+        </p>
+      </div>
+    <br>
+    <br>
+    <button class="collapsible" style="text-align: center;">The Chaos Insurgency</button>
+      <div class="content">
+        <h4>
+          <a href="http://www.scp-wiki.net/chaos-insurgency-hub">Chaos Insurgency Hub</a>
+          <br>
+          <br>
+          <img src="/advanced_web/Project2/images/CI.png">
+          <br>
+          <br>
+        </h4>
+        <p>
+          The Insurgency is a group that split off of the Foundation due to differences in philosophy regarding anomalies. Whereas the Foundation has a strict
+          policy of containment, the Chaos Insurgency would rather use and weaponize anomalies.
+        </p>
+      </div>
+    <br>
+    <br>
+    <button class="collapsible" style="text-align: center">The Serpent's Hand</button>
+      <div class="content">
+        <h4>
+          <a href="http://www.scp-wiki.net/serpent-s-hand-hub">Serpent's Hand Hub</a>
+          <br>
+          <br>
+          <img src="/advanced_web/Project2/images/SH.png" width="578" height="608">
+          <br>
+          <br>
+        </h4>
+        <p>
+          The Serpent’s Hand believes in the preservation and normalization of the anomalous, and are in direct opposition to both the GOC and the Foundation.
+          They are associated with an anomalous place known as the Wanderer’s Library. There is also a sister site to the SCP Wiki called <a href="http://wanderers-library.wikidot.com/">The Wanderer’s Library</a>,
+          with more of a focus on fantastical elements and inspiring a sense of wonder, as opposed to the SCP Wiki’s focus on horror and sci-fi.
+        </p>
+      </div>
+      <br>
+      <br>
+      <button class="collapsible" style="text-align: center">Marshall, Carter, and Dark Ltd.</button>
+        <div class="content">
+          <h4>
+            <a href="http://www.scp-wiki.net/marshall-carter-and-dark-hub">MC&D Hub</a>
+            <br>
+            <br>
+          </h4>
+          <p>
+            MC&D focuses on the sale and trade of anomalous items, and is generally a neutral organization, having dealings with both the Foundation
+            and other GoIs. Deals mostly with the super-rich. The Marshall, Carter, and Dark Hub can be found here.
+          </p>
+        </div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

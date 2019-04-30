@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Format Screws</h2>
+  <p>
+    Articles that deviate from the standard format in odd or unique ways are referred to as format screws. Often, this change in
+    format is vital in some way to presenting the object that the article is about. For a minor example, SCP-426 is a toaster that
+    can only be referred to in the first person, and as such, the entire article is written seemingly from the perspective of the
+    toaster. More major examples of format screws may sometimes include hidden collapsibles, invisible text, or different versions
+    of the same article.
+  </p>
+  <p><b>Examples</b> (highlight the white space below):</p>
+  <p style="color: white">Some articles will hide information with white text. This is one of the most common tricks.<p>
+  <p>Some other articles may make the text size 0 for certain text blocks. To see this text, you can check the Page Source by
+    clicking first the Options link at the bottom of the page, then the Page Source link.</p>
+  <img src="/advanced_web/Project2/images/pgsrc.jpg">
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

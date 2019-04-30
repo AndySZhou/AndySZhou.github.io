@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Miscellaneous</h2>
+  <p>
+    This guide is mostly meant as an introduction to reading SCPs, but it’s important to remember that there is an entire community surrounding it. There are numerous
+    guidelines for commenting on articles, writing SCPs, site etiquette, and other facets of the community which can be found here.
+    <br>
+    <br>
+    Additionally, if you’re ever having trouble understanding or reading an SCP, maybe because it’s too long, too meta, or too filled with jargon, you can check out the
+    SCP Declassified Subreddit. Here, various authors post threads dedicated to picking apart some of the harder-to-understand articles piece by piece to make them as easy
+    to read as possible. Some of these declasses are also in video form, and there are various Youtubers who also base their videos around a similar concept. A page with
+    all of the currently declassified SCPs can be found here.
+    <br>
+    <br>
+    The SCP Wiki is also translated into several other languages, each with their own site. The hub those sites can be found here.
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

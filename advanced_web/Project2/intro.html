@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Introduction</h2>
+  <p>
+    The SCP Wiki is a website based around a fictional organization called the SCP (Secure, Contain, Protect) Foundation,
+    with over 4000 articles written by various different authors. With a strong leaning towards horror and sci-fi, it is comprised
+    of some of the most creative and unique writing on the Internet, but it’s unique format can mean that it’s hard to understand
+    and get into for some.
+    <br>
+    <br>
+    Just going in and reading articles, there are several aspects of the universe that will go
+    unexplained unless the viewer read pages or supplementary background text, which can hamper the experience.
+    So instead of people having to go find and read those pages of text (most of which can be found <a href="http://www.scp-wiki.net/guide-hub">here</a>), I’m
+    making this guide so that they can read all of these pages of text instead. <br>
+    <br>
+  </p>
+  <h3>Content Warning:</h3>
+  <p>
+    The SCP Wiki is a horror-themed site about an organization that uses sometimes questionable ethics in service of
+    the greater good. As such, some articles will involve subject matter that is difficult for some people to read about and the wiki
+    should be read at the reader’s own discretion.
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

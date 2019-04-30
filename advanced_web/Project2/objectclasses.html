@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>Object Classes</h2>
+  <p>
+    The standard object classes are as follows:
+    <br>
+    <br>
+    <b>Safe:</b> <br>(Almost) exactly what it says – these objects are generally safely contained and are minimal risks when contained. This
+    doesn't mean that they're not dangerous at  all, just that they can be containe with relative certainty.
+    <br>
+    <br>
+    <b>Euclid:</b> <br>These objects can usually be at least somewhat contained, but are more unpredictable and can throw in complications in
+    the process.
+    <br>
+    <br>
+    <b>Keter:</b> <br>These objects are extremely difficult for the Foundation to contain, and in some cases complete containment is practically
+    impossible and the Foundation can only attempt to minimize the impact.
+    <br>
+    <br>
+    <b>Apollyon:</b> <br>Used in only a few articles, this basically means it's uncontainable and humanity's doomed as a result. Doesn't
+    really get used almost at all.
+    <br>
+    <br>
+    <b>Thaumiel:</b> <br>The Foundation actively makes use of these objects to aid in the containment of other objects.
+    This class is less common than the first three, but more common than Apollyon.
+    <br>
+    <br>
+    It’s important to note that these are not technically indicators of how dangerous an object is. A common device used to explain
+    this is the “cardboard box” test: if the Foundation could leave something in a cardboard box and not have to worry about it,
+    it’s Safe. So if there was a button that could be pressed to end the world (very dangerous), it would still be classified as
+    Safe, because the Foundation could just lock it up and call it a day. That being said, object classes are very often <i>contextually</i>
+    used as indicators of danger, and many Keter-class objects have some world-ending capabilities.
+
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

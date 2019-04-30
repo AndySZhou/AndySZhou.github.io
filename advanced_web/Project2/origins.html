@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide to the SCP Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/advanced_web/Project2/stylesheets/scp.css"/>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Guide to the SCP Wiki</h1>
+    </div>
+  </div>
+  <div class="sidenav">
+    <button class="collapsible">Introduction</button>
+      <div class="content">
+        <a href="intro.html">Introduction</a>
+        <a href="origins.html">A Brief History</a>
+      </div>
+    <button class="collapsible">Format</button>
+    <div class="content">
+      <a href="standardformat.html">Standard Format</a>
+      <a href="objectclasses.html">Object Classes</a>
+      <a href="formatscrew.html">Format Screws</a>
+    </div>
+    <button class="collapsible">Terminology and Lore</button>
+    <div class="content">
+      <a href="terms.html">Foundation Terminology and Lore</a>
+      <a href="001.html">SCP-001</a>
+      <a href="GOI.html">Groups of Interest</a>
+    </div>
+    <button class="collapsible">Misc. Info and Recommendations</button>
+    <div class="content">
+      <a href="misc.html">Misc.</a>
+      <a href="rec.html">Recommendations</a>
+    </div>
+  </div>
+
+<div style="text-align: center" class="main">
+  <h2>A Brief History</h2>
+  <p>
+    The SCP Foundation got its start on the /x/ board of 4chan, a board dedicated to horror writing and creepypasta. There, the
+    first SCP, SCP-073 was posted. By modern SCP standards, 073 isn’t terribly interesting – it’s a statue that breaks your neck
+    if you’re not looking at it. But, being the first of its kind, 073 garnered quite a lot of attention. The scary part of it
+    wasn’t so much the object itself, but the implication – in this universe, there existed at least 72 other objects of a similar
+    nature, and an organization dedicated to containing them. From there, more SCP’s started to pop up on the boards as people
+    took to expanding on this idea, and that eventually became the SCP Wiki. <br>
+    <br>
+    For more on the history of the site, you can check out Roget’s “History of the Universe” essays
+    <a href="http://www.scp-wiki.net/history-of-the-universe-hub">here.</a>
+    <br>
+    <br>
+  </p>
+    <h2>Background</h2>
+  <p>
+    An SCP is basically an object that doesn’t obey the rules of reality as we understand them, something outside the norm. With
+    the SCP Wiki having its roots in creepypasta(basically internet horror stories), most SCP articles will have a theme of horror,
+    but there also exist many articles about objects that are simply strange or even benevolent. Some SCP articles aren’t even
+    really about the object itself, but more about the kind of story that can be told using it.
+    <br>
+    <br>
+    As a general rule, lower-numbered SCPs were written earlier in the site’s history, and so you may notice a change if you go
+    from something like <a href="http://www.scp-wiki.net/scp-682">SCP-682</a> to something like, say, <a href="http://www.scp-wiki.net/scp-4000">SCP-4000</a>.
+    <br>
+    <br>
+    Some SCPs may be tangentially or directly related, but for the most part, SCPs are entirely separate, with one SCP having
+    little to no relation to the next on the list. SCP’s are also (typically) written with the specific format of an official,
+    scientific article in mind. Straight-up stories are instead called Tales.
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
